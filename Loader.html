@@ -1,0 +1,47 @@
+                    <!-- HTML code -->
+
+
+<!-- for google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+<body> 
+  <div class="loader "></div>  
+</body>
+
+
+                    <!-- CSS code -->
+
+<style>
+
+  .loader {
+
+    width: fit-content;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    text-align: center;
+    background: radial-gradient(circle closest-side,#cc6ca6e1 94%,#00000000) right/calc(200% - 1em) 100%;
+    animation: l24 1.2s infinite alternate linear;
+  }
+  .loader::before {
+    content: "Loading...";
+    line-height: 1em;
+    color: #0000;
+    background: inherit;
+    background-image: radial-gradient(circle closest-side,#fff 94%,#000000d7);
+    -webkit-background-clip:text;
+            background-clip:text;
+  }
+
+
+  @keyframes l24{
+    100%{background-position: left}
+  }
+
+</style>
